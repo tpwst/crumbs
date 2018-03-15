@@ -12,6 +12,12 @@ syntax region CrumbsEdits start="<" end=">"
 syntax match crumbsSecHead "@.*$"
 syntax match crumbsSubSecHead "\*.*$"
 syntax match crumbsPlayers "+.*$"
+syntax match crumbsRcurl "}"
+syntax match crumbsLcurl "{"
+syntax match crumbsTilda "\~"
+syntax match crumbsColons ":"
+syntax match crumbsUnderscore "_"
+syntax match crumbsQuotations "''.*$"
 
 highlight link crumbsDirections Comment
 
@@ -23,5 +29,11 @@ highlight link crumbsEdits Keyword
 highlight link crumbsSecHead Function 
 highlight link crumbsSubSecHead Constant
 highlight link crumbsPlayers Special 
+highlight link crumbsRcurl Tag
+highlight link crumbsLcurl Tag
+highlight link crumbsTilda Debug
+highlight link crumbsColons Delimiter 
+highlight link crumbsUnderscore Tag
+highlight link crumbsQuotations Tag
 
 let b:current_syntax = "crumbs"

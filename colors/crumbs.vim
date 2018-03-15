@@ -50,8 +50,11 @@ hi Identifier term=underline ctermfg=4 guifg=DarkBlue
 hi Statement term=bold ctermfg=3 gui=bold guifg=Brown
 hi PreProc term=underline ctermfg=6 guifg=DarkYellow
 hi Type term=underline ctermfg=3* guifg=Yellow
-hi Ignore cterm=bold ctermfg=7 guifg=bg
+hi Ignore cterm=bold ctermfg=6 guifg=DarkYellow
 hi Error term=reverse ctermfg=0 ctermbg=7* guifg=Black guibg=White
 hi Todo term=standout ctermfg=0 ctermbg=3 guifg=Blue guibg=Yellow
 hi Keyword term=underline ctermfg=1* guifg=Red
 hi Function term=underline cterm=underline ctermfg=4 guifg=DarkBlue
+hi Tag term=bold ctermfg=3 gui=bold guifg=Brown
+hi Delimiter term=bold ctermfg=6 guifg=DarkCyan
+hi Debug term=bold ctermfg=4* guifg=Blue
