@@ -2,22 +2,22 @@ if exists("b:current_syntax")
     finish
 endif
 
-syntax keyword crumbsDirections Directions WEST West west EAST East east  SOUTH South south NORTH North north UP Up up  DOWN Down down
+syntax keyword crumbsDirections Directions WEST EAST SOUTH NORTH UP DOWN 
 
 syntax region crumbsLocations start="(" end=")"
-syntax region CrumbsCharacters start="|" end="|"
-syntax region CrumbsObjects start="\[" end="\]"
-syntax region CrumbsEdits start="<" end=">"
+syntax region crumbsCharacters start="{" end="}"
+syntax region crumbsObjects start="\[" end="\]"
+syntax region crumbsEdits start="<" end=">"
+syntax region crumbsDoubleQuotes start="\"" end="\""
 
 syntax match crumbsSecHead "@.*$"
 syntax match crumbsSubSecHead "\*.*$"
-syntax match crumbsPlayers "+.*$"
-syntax match crumbsRcurl "}"
-syntax match crumbsLcurl "{"
+syntax match crumbsPipe "|"
 syntax match crumbsTilda "\~"
-syntax match crumbsColons ":"
+syntax match crumbsSemiColons ";"
 syntax match crumbsUnderscore "_"
-syntax match crumbsQuotations "''.*$"
+syntax match crumbsQuotes "''.*$"
+syntax match crumbsColons "//.*$"
 
 highlight link crumbsDirections Comment
 
@@ -25,15 +25,15 @@ highlight link crumbsLocations Type
 highlight link crumbsCharacters Identifier
 highlight link crumbsObjects Error
 highlight link crumbsEdits Keyword
+highlight link crumbsDoubleQuotes PreProc
 
 highlight link crumbsSecHead Function 
 highlight link crumbsSubSecHead Constant
-highlight link crumbsPlayers Special 
-highlight link crumbsRcurl Tag
-highlight link crumbsLcurl Tag
+highlight link crumbsPipe Tag
 highlight link crumbsTilda Debug
-highlight link crumbsColons Delimiter 
+highlight link crumbsSemiColons Delimiter 
 highlight link crumbsUnderscore Tag
-highlight link crumbsQuotations Tag
+highlight link crumbsQuotes Tag
+highlight link crumbsColons Comment 
 
 let b:current_syntax = "crumbs"
