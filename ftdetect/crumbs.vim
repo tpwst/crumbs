@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.crmb set filetype=crumbs
+au BufNewFile,BufRead *.crm set filetype=crumbs
