@@ -43,18 +43,21 @@ hi Cursor guifg=bg guibg=fg
 hi lCursor guifg=bg guibg=fg
 
 " Colors for syntax highlighting
-hi Comment ctermfg=8 guifg=DarkGrey
-hi Special term=underline cterm=underline ctermfg=4 guifg=DarkBlue
-hi Constant cterm=underline ctermfg=3 guifg=Yellow
-hi Identifier term=underline cterm=none ctermfg=4 guifg=DarkBlue
+hi grey ctermfg=8 guifg=DarkGrey
+hi greyUnderline term=underline cterm=underline ctermfg=8 guifg=DarkGrey
+hi greyInverse term=reverse ctermfg=0 ctermbg=8 guifg=Black guibg=DarkGrey
+" hi Special term=underline cterm=underline ctermfg=4 guifg=DarkBlue
+hi yellowUnderline cterm=underline ctermfg=3 guifg=Yellow
+hi blueUnderline term=underline cterm=none ctermfg=4 guifg=DarkBlue
 hi Statement ctermfg=3 guifg=Brown
-hi PreProc term=underline ctermfg=2 guifg=DarkGreen
-hi Type term=underline ctermfg=3* guifg=Yellow
-hi Ignore ctermfg=6 guifg=DarkYellow
-hi Error term=reverse ctermfg=0 ctermbg=7* guifg=Black guibg=White
-hi Todo term=standout ctermfg=0 ctermbg=3 guifg=Blue guibg=Yellow
-hi Keyword term=underline ctermfg=1* guifg=Red
-hi Function term=underline cterm=underline ctermfg=4 guifg=DarkBlue
-hi Tag ctermfg=3 guifg=Brown
-hi Delimiter ctermfg=6 guifg=DarkCyan
-hi Debug ctermfg=4* guifg=Blue
+" hi PreProc term=underline cterm=underline ctermfg=2 guifg=DarkGreen
+hi whiteUnderline term=underline cterm=underline ctermfg=7* guifg=White
+hi yellow ctermfg=3* guifg=Yellow
+" hi Ignore ctermfg=6 guifg=DarkYellow
+hi whiteInverse term=reverse ctermfg=0 ctermbg=7* guifg=Black guibg=White
+" hi Todo term=standout ctermfg=0 ctermbg=3 guifg=Blue guibg=Yellow
+hi redUnderline term=underline ctermfg=1* guifg=Red
+hi blueUnderline term=underline cterm=underline ctermfg=4 guifg=DarkBlue
+hi yellowInverse term=reverse ctermfg=0 ctermbg=3* guifg=Black guibg=Yellow
+hi cyan ctermfg=6 guifg=DarkCyan
+hi blue ctermfg=4* guifg=Blue
