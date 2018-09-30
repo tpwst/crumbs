@@ -16,7 +16,7 @@ let colors_name = "crumbs"
 hi Normal guibg=black guifg=Black
 
 hi SpecialKey ctermfg=4 guifg=Blue
-hi NonText ctermfg=4 guifg=Blue
+hi NonText ctermfg=7* guifg=White
 hi Directory ctermfg=4 guifg=Blue
 hi ErrorMsg term=none ctermfg=7 ctermbg=1 guifg=White guibg=Red
 hi IncSearch term=reverse cterm=reverse gui=reverse
