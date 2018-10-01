@@ -3,16 +3,14 @@ if exists("b:current_syntax")
 endif
 
 syntax keyword specialChar Directions WEST EAST SOUTH NORTH UP DOWN 
+syntax keyword fileSpec EOF
 
 syntax region aside start="(" end=")"
 syntax region curly start="{" end="}"
 syntax region square start="\[" end="\]"
-syntax region edits start="<" end=">"
+syntax region angle start="<" end=">"
 " syntax region doubleQuotes start="\"" end="\""
 syntax region pipe start="|" end="|"
-
-" would really like to figure this out
-syntax region colon start="_" end=":"
 
 syntax match secHead "@.*$"
 syntax match subSecHead "\*.*$"
@@ -24,11 +22,12 @@ syntax match quotes "''.*$"
 syntax match doubleSlash "//.*$"
 
 highlight link specialChar grey
+highlight link fileSpec greyInverse
 
 highlight link aside yellow
 highlight link curly yellowInverse
 highlight link square whiteInverse
-highlight link edits greyInverse 
+highlight link angle grey 
 " highlight link doubleQuotes yellow 
 
 highlight link secHead yellow
